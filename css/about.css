@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Simplifica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Simplifica'), url('../fonts/SIMPLIFICATypeface.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Baufra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baufra-Regular'), url('../fonts/Baufra-Regular.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('../fonts/BebasNeue.woff') format('woff');
+    }
+
+
+body{
+    font-family: Simplifica;
+    margin:0;
+}
+/* hover animations */
+.hero-bg a:hover{
+    text-shadow: 2px 2px 2px gray;
+}
+
+.hero-bg{
+    background:black url('../images/login/bg2.jpg');
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 1em;
+    background-position:50% 50%;
+    background-size: cover;
+    padding-bottom: 2em;
+}
+
+.hero-bg ul {
+    list-style-type: none;    
+    margin: 0;
+    padding:0;
+  }
+.hero-bg a{
+    color:white;
+    text-shadow: 0px 1px rgb(202, 202, 202);
+    text-decoration: none;
+    font-weight: light;
+    font-size: 1.5em;
+}
+.hero-bg h1{
+    padding-top: 2em;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.hero-bg h2{
+    font-size: 2em;
+    margin: 0;
+
+}
+
+
+.hero-bg li {
+    display: inline;
+    margin: 5px;
+    
+  }
+#xmltag{
+    color: blue;
+    font-size: 20px;
+}
+.group{
+    background: white;
+    color: black;
+    border-radius:2em;
+    
+}
+
+.group h2{
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+}
+.group p{
+    margin: 0.1em;
+    padding-bottom: 1em;
+    font-size: 30px;
+}
+
+
+
+.why{
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 30px;
+}
+.why p{
+    font-family: Baufra;
+}
+
+.joshua{
+    background:#EFE1E1;
+    text-align: center;
+    padding: 1em 1em;
+    
+
+}
+
+.joshua h2{
+    font-size: 40px;
+}
+.jenslee h2{
+    font-size: 40px;
+}
+
+.joshua h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.jenslee h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.jenslee{
+    background:#C4E4DF;
+    text-align: center;
+    padding: 1em 1em;
+
+}
+/* LOCATION */
+.location {
+    background-color:#EFE1E1;
+    width: 100%;
+    text-align: center;
+  }
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* FOOTER */
+.section6{
+    font-family: Baufra;
+}
+
+.section6 h4{
+    margin: 0;
+    padding:1em 0em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 100%;
+    
+}
+
+.section6 h6{
+    margin: 0.2em 0;
+    text-align: center;
+    
+}
+
+.section6 hr{
+    margin-top:2em ;
+    margin: 2em 2em 0em 2em;
+}
+
+.section6 img{
+    width: 100%;
+}
+
+#icon-wrapper {
+
+    padding:0 90px;
+    text-align: center;
+}
+
+#social  {
+    display: inline-block;
+    height:32px;
+    z-index:2;
+}
+
+#social div {
+    display: inline-block;
+    margin: 0 0.3em;
+}
+
+.section6 img{
+
+    height:30px;
+    width:30px;
+    background-size:32px;
+}
+
+
+/*Location*/
+.location{
+    padding:1em 0em;
+}
+.Location h2{
+    font-size: 5em; 
+    text-align: center;
+    padding-top: 20%;
+}
+
+
+@media(min-width: 730px){
+
+    /* FOOTER */
+    .section6 h4{
+        font-size:25px ;
+    }
+    .section6 img{
+
+        height:50px;
+        width:50px;
+        background-size:32px;
+    }
+    .hero-bg li {
+        margin: 10px;
+      }
+    .hero-bg{
+        background-position:90% 50%;
+    }
+
+}
+
+@media(min-width: 930px){
+    
+    .hero-bg h1{
+        padding-top: 1em;
+        font-size: 5em;
+        font-weight: 100;
+    }
+    
+    .hero-bg h2{
+        font-size: 4em;
+        margin: 0;
+    
+    }
+    .hero-bg li {
+        margin: 10px;
+      }
+    .hero-bg{
+        background-position:50% 50%;
+    }
+    .group{
+        margin:1em 10em;
+    }
+    .why{
+        margin:0 3em;
+    }
+
+    .location{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .Location h2{
+        font-size: 5em;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    section.Location{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "leftside rightside";
+
+    }
+
+    .section.h2{   
+        grid-area: leftside;
+    }
+    .mapsec{
+        grid-area: rightside;
+    }
+
+}

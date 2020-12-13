@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 10</title>
+    <link rel="stylesheet" href="css/top10.css">
+    <script defer src="js/top10.js"></script>
+</head>
+<body onload=grid_init()>
+    <div class="hero-bg">
+        <section class="section1">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="login.php">LOGIN</a></li>
+                        <li><a href="top10.html">TOP 10s</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="user.php">USER</a></li>
+                    </ul>
+                </nav>
+            </header>            
+        </section>
+
+        <h1 id="headert">TECHNAGO</h1>
+        <form>
+            <select name="Dropdown" id="dd" class="dropdown" onchange="load_new_content()">
+                <option value="def">Select a category...</option>
+                <option value="1">HEADPHONES</option>
+                <option value="2">LAPTOPS</option>
+                <option value="3">MOBILE PHONES</option>
+                <option value="4">EARPHONES</option>
+                <option value="5">SPEAKERS</option>
+                <option value="6">POWER     BANKS</option>
+            </select>
+        </form>
+
+    </div>
+    <div class="top10list" id="top10listmain">
+        <section class="grid" id="top1">
+            <img src="images/icons/test.png" alt="" id="imgtop1">
+            <div class="leftside">
+                <h2 id="htop1">TITLE 1</h2>
+                <p id="ptop1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti itaque dolore fuga exercitationem rem laboriosam vel labore necessitatibus voluptas, alias consequuntur illo id, nobis nemo, recusandae ut! Corporis, distinctio?</p>
+                
+            </div>
+                
+            
+        </section>
+
+        <section class="grid" id="top2">
+            <img src="images/icons/test.png" alt="" id="imgtop2">
+            <div class="rightside">
+                <h2 id="htop2">TITLE 1</h2>
+                <p id="ptop2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti itaque dolore fuga exercitationem rem laboriosam vel labore necessitatibus voluptas, alias consequuntur illo id, nobis nemo, recusandae ut! Corporis, distinctio?</p>
+            </div>
+            </section>
+
+        <section class="grid" id="top3">
+            <img src="images/icons/test.png" alt="" id="imgtop3">
+            <div class="leftside">
+                <h2 id="htop3">TITLE 1</h2>
+                <p id="ptop3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti itaque dolore fuga exercitationem rem laboriosam vel labore necessitatibus voluptas, alias consequuntur illo id, nobis nemo, recusandae ut! Corporis, distinctio?</p>
+            </div>                             
+        </section>
+
+        <section class="grid" id="top4">
+            <img src="images/icons/test.png" alt="" id="imgtop4">
+            <div class="rightside">
+                <h2 id="htop4">TITLE 1</h2>
+                <p id="ptop4">Lorem ipsum dolor sit</p>                
+            </div>
+            
+        </section>
+
+        <section class="grid" id="top5">
+            <img src="images/icons/test.png" alt="" id="imgtop5">
+            <div class="leftside">
+                <h2 id="htop5">TITLE 1</h2>
+                <p id="ptop5">Lorem ipsum onsecteturinctio?</p>                
+            </div>
+            
+        </section>
+
+        <section class="grid" id="top6">
+            <img src="images/icons/test.png" alt="" id="imgtop6">
+            <div class="rightside">
+                <h2 id="htop6">TITLE 1</h2>
+                <p id="ptop6">Lorem i Corporis, distinctio?</p>                
+            </div>
+
+        </section>
+
+        <section class="grid" id="top7">
+            <img src="images/icons/test.png" alt="" id="imgtop7">
+            <div class="leftside">
+                <h2 id="htop7">TITLE 1</h2>
+                <p id="ptop7">Lorem ipsum dris, distinctio?</p>                
+            </div>
+
+        </section>
+
+        <section class="grid" id="top8">
+            <img src="images/icons/test.png" alt="" id="imgtop8">
+            <div class="rightside">
+                <h2 id="htop8">TITLE 1</h2>
+                <p id="ptop8">Lorem ipsum stinctio?</p>                
+            </div>
+            
+        </section>
+
+        <section class="grid" id="top9">
+            <img src="images/icons/test.png" alt="" id="imgtop9">
+            <div class="leftside">
+                <h2 id="htop9">TITLE 1</h2>
+                <p id="ptop9">Lorconsequuntus, distinctio?</p>                
+            </div>
+
+        </section>
+
+        <section class="grid" id="top10">
+            <img id="imgtop10" src="images/icons/test.png" alt="" id="imgtop10">
+            <div class="rightside">     
+                <h2 id="htop10">TITLE 1</h2>
+                <p id="ptop10">Lorem iemo, istinctio?</p>           
+            </div>
+        </section>
+    </div>
+
+    <div class="section6">
+        <h4>FOLLOW US ON</h4>
+        <div id='icon-wrapper'>
+            <div id="social">
+                <div class="twitter">
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/twitter.png" alt=""></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/facebookx.png" alt=""></a>
+                </div>
+                <div class="linkedin">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/linkedin.png" alt=""></a>
+                </div>
+                <div class="google">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+                
+        
+        <hr>
+        <h6>©️2020 TECHNAGO,ALL RIGHTS RESERVED</h6>
+
+    </div>
+    
+    
+</body>
+</html>

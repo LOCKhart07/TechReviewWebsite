@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Simplifica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Simplifica'), url('../fonts/SIMPLIFICATypeface.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Baufra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baufra-Regular'), url('../fonts/Baufra-Regular.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('../fonts/BebasNeue.woff') format('woff');
+    }
+
+body{
+    font-family: Simplifica;
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+/* hover animations */
+.hero-bg a:hover{
+    text-shadow: 2px 2px 2px gray;
+}
+
+.hero-bg{
+    background:black url('../images/login/bg2.jpg');
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 1em;
+    background-position:0;
+    background-size: cover;
+    padding-bottom: 5.9em;
+}
+
+.hero-bg ul {
+    list-style-type: none;
+    
+    margin: 0;
+    padding:0;
+  }
+.hero-bg a{
+    color:white;
+    text-decoration: none;
+    font-weight: light;
+    font-size: 1.5em;
+}
+
+
+.hero-bg li {
+    display: inline;
+    margin: 5px;
+    
+  }
+
+.form-container{
+    background: white;
+    margin: 3em 0em;
+    padding-top: 1em;
+    padding:0em;
+    border-radius: 3em;
+}
+
+.form-container label{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    color: black;
+    display: block;
+}
+
+input[type=text]{
+    margin:1em 0;
+    padding:0 1em;
+    font-size: 15px;
+    border:2px solid grey;
+    border-radius: 21em;
+    height:42px;
+    width: 80%;
+}
+
+input[type=password]{
+    margin:1em 0;
+    padding:0 1em;
+    font-size: 15px;
+    border:2px solid grey;
+    border-radius: 21em;
+    height:42px;
+    width: 80%;
+}
+
+input[type=submit]{
+    font-family: Bebas;
+    font-size: 30px;
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    border-radius: .8em;
+    border:0px;
+    width:90%;
+    height: 40px;
+    background: #FABAB8;
+}
+
+input[type=submit]:hover{
+    background: #ee8985;
+}
+.form-container p{
+    text-decoration-line: underline;
+    margin:0.5em 1em 2em 1em;
+    color:grey;
+    font-size: 15px;
+    padding-bottom: 1em;
+}
+
+.errorx{
+    color:red;
+    text-align: left;
+    margin: 0 2em;
+}
+
+/* FOOTER */
+.section6{
+    font-family: Baufra;
+}
+
+.section6 h4{
+    margin: 0;
+    padding:1em 0em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 100%;
+    
+}
+
+.section6 h6{
+    margin: 0.2em 0;
+    text-align: center;
+    
+}
+
+.section6 hr{
+    margin-top:2em ;
+    margin: 2em 2em 0em 2em;
+}
+
+.section6 img{
+    width: 100%;
+}
+
+#icon-wrapper {
+
+    padding:0 90px;
+    text-align: center;
+}
+
+#social  {
+    display: inline-block;
+    height:32px;
+    z-index:2;
+}
+
+#social div {
+    display: inline-block;
+    margin: 0 0.3em;
+}
+
+.section6 img{
+
+    height:30px;
+    width:30px;
+    background-size:32px;
+}
+
+
+@media(min-width: 730px){
+    .errorx{
+        color:red;
+        text-align: left;
+        margin: 0 3em;
+    }
+    .hero-bg li {
+        margin: 10px;
+      }
+    .hero-bg{
+        background-position:40% 90%;
+    }
+
+}
+
+@media(min-width: 930px){
+    .hero-bg li {
+        margin: 10px;
+      }
+    body{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-container label{
+        text-align: left;
+        margin-left: 2em;
+    }
+    .form-container{
+        background: white;
+        margin-left: 40em;
+        padding-top: 1em;
+        padding:0 1em;
+        border-radius: 3em;
+    }
+    .hero-bg{
+        background-position:50% 50%;
+    }
+
+}
