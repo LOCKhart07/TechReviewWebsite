@@ -1,3 +1,4 @@
 # TechReviewWebsite
 
-Website link - technago.rf.gd
+Some screenshots of the website
+![](/Screenshots/1.png)
